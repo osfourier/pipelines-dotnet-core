@@ -18,3 +18,5 @@ steps:
     version: '2.2.401' # replace this value with the version that you need for your project
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: PublishBuildArtifacts@1
